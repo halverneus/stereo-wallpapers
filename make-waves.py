@@ -68,7 +68,7 @@ def sample_noise(u, v):
 
 
 def grid(c, spacing, width):
-    """Anti-aliased line profile: 1 on line centres, ~width px wide, smooth falloff."""
+    """Anti-aliased line profile: 1 on line centers, ~width px wide, smooth falloff."""
     d = np.abs(((c / spacing + 0.5) % 1.0) - 0.5) * spacing
     return np.clip(1.0 - (d - width * 0.5) / 1.2, 0.0, 1.0)
 
@@ -102,7 +102,7 @@ def eye(t, sign):
     base = (0.10 + 0.20 * lam + 0.035 * tex) * depth_fade
     lines = (0.42 * g + 0.18 * g2) * (0.55 + 0.45 * lam) * depth_fade
     lum = (base + lines) * vign + 0.22 * spec
-    col = np.stack([lum * 0.86, lum * 0.94, lum * 1.05], -1)  # pale blue-grey, low saturation
+    col = np.stack([lum * 0.86, lum * 0.94, lum * 1.05], -1)  # pale blue-gray, low saturation
     return col
 
 

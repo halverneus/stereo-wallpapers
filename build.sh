@@ -1,7 +1,7 @@
 #!/bin/bash
 # Renders every wallpaper into out/: the side-by-side clip (what Sparky Stereo OS plays), a red/cyan
 # anaglyph preview for any ordinary player, and SHA256SUMS. Each clip carries its provenance in
-# its tags: title, author, licence, source repository, script and commit.
+# its tags: title, author, license, source repository, script and commit.
 # Needs Python 3 with numpy, and an ffmpeg with libx264 and the stereo3d filter.
 #   ./build.sh                 all wallpapers
 #   ./build.sh particles       just one
